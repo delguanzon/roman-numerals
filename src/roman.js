@@ -16,5 +16,8 @@ RomanNum.prototype.toRoman = function (){
   if(this.currVal === 50) {
     return 'L';
   }
+  if(this.currVal === 100) {
+    return 'C';
+  }
   return 0;
 };
