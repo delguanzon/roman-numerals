@@ -51,4 +51,15 @@ describe("RomanNum", () => {
     let num = new RomanNum(6);
     expect(num.toRoman()).toEqual('VI');
   });
+
+  test('should return VII if the value is 7', () => {
+    let num = new RomanNum(7);
+    expect(num.toRoman()).toEqual('VII');
+  })
+
+  test('should return VII if the value is 8', () => {
+    let num = new RomanNum(8);
+    expect(num.toRoman()).toEqual('VIII');
+  })
+  
 });
