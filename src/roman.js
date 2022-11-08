@@ -23,6 +23,10 @@ RomanNum.prototype.toRoman = function (){
     if((this.currVal) % 5 === 2)
     {
       romanNumeral.push("VII");
+    }   
+    if((this.currVal) % 5 === 3)
+    {
+      romanNumeral.push("VIII");
     }  
   }
 
