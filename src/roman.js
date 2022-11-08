@@ -5,10 +5,10 @@ export default function RomanNum(number){
 
 RomanNum.prototype.toRoman = function (){
   let romanNumeral = [];
-  if(this.currVal<= 3){
+  if(this.currVal <= 3){
     for(let i = 1; i <=this.currVal; i++)
     {
-      romanNumeral.push["I"];
+      romanNumeral.push("I");
     }
   }
 
@@ -33,6 +33,6 @@ RomanNum.prototype.toRoman = function (){
   if(this.currVal === 1000) {
     return 'M';
   }
-  return 0;
+  return romanNumeral.join("");
 };
 
