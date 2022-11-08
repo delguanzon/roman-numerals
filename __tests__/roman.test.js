@@ -42,4 +42,8 @@ describe("RomanNum", () => {
     expect(num.toRoman()).toEqual('M');
   });
 
+  test('should return II if the value is 2', () => {
+    let num = new RomanNum(2);
+    expect(num.toRoman()).toEqual('II');
+  });
 });
