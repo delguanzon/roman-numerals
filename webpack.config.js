@@ -18,7 +18,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'Project Title',
+      title: 'Prjoect Title',
       template: './src/index.html',
       inject: 'body'
     })
