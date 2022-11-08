@@ -46,4 +46,9 @@ describe("RomanNum", () => {
     let num = new RomanNum(2);
     expect(num.toRoman()).toEqual('II');
   });
+
+  test('should return VI if the value is 6', () => {
+    let num = new RomanNum(6);
+    expect(num.toRoman()).toEqual('VI');
+  });
 });
