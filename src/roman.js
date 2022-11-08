@@ -19,7 +19,7 @@ RomanNum.prototype.toRoman = function (){
     if((this.currVal) % 5 === 1)
     {
       romanNumeral.push("VI");
-    }    
+    } 
   }
 
   if(this.currVal === 1){
