@@ -4,6 +4,14 @@ export default function RomanNum(number){
 }
 
 RomanNum.prototype.toRoman = function (){
+  let romanNumeral = [];
+  if(this.currVal<= 3){
+    for(let i = 1; i <=this.currVal; i++)
+    {
+      romanNumeral.push["I"];
+    }
+  }
+
   if(this.currVal === 1){
     return 'I';
   }
@@ -27,3 +35,4 @@ RomanNum.prototype.toRoman = function (){
   }
   return 0;
 };
+
