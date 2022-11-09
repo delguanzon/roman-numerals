@@ -61,5 +61,11 @@ describe("RomanNum", () => {
     let num = new RomanNum(8);
     expect(num.toRoman()).toEqual('VIII');
   });
+
+  test('should return MMMCM if the value is 3900', () => {
+    let num = new RomanNum(3900);
+    expect(num.toRoman()).toEqual('MMMCM');
+  });
+  
   
 });

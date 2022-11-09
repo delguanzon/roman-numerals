@@ -30,6 +30,35 @@ RomanNum.prototype.toRoman = function (){
     }  
   }
 
+  // >I && <V => push("I"). push().next("V");
+  
+  let remainder = this.currVal%1000;
+  let wholeNum = 0;
+  if(remainder >= 0){
+    wholeNum = this.currVal - remainder;
+    for(let i = 1; i <=wholeNum/1000; i++)
+    {
+      romanNumeral.push("M");
+    } 
+  } 
+  wholeNum = remainder;
+  remainder = remainder%900;
+
+  if(remainder >= 0 && remainder != wholeNum)
+  {
+    wholeNum = wholeNum - remainder;
+    romanNumeral.push("CM");
+  }
+  else {
+    wholeNum = wholeNum - remainder;
+    romanNumeral.push("CM");
+  }
+
+  
+
+
+
+
   if(this.currVal === 1){
     return 'I';
   }
